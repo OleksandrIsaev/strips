@@ -1,33 +1,31 @@
 .mainwrapper
     .mainlogo
         .container
-            header.space 
-                .logo
-                    a(href="#")
-                        img(src="https://raw.githubusercontent.com/OleksandrIsaev/strips/master/src/img/logo.png", alt="logo") 
-                        | trips
-                .sea
-                    .menu.navbar 
-                        input.checkbox(id="read" type="checkbox" name="menu")
-                        label(for="read")
-                            span.burger-visible
-                            span.burger-visible
-                            span.burger-visible
-                        ul  
-                            li
-                                a(href="#") Главная
-                            li
-                                a(href="#") Услуги 
-                            li
-                                a(href="#") О компании  
-                            li
-                                a(href="#") Акции  
-                            li
-                                a(href="#") Партнеры
-                            li
-                                a(href="#") Отзывы
-                            li
-                                a(href="#") Контакты
+            header
+                nav.navbar.navbar-expand-lg.d-flex.justify-content-between.navbar-dark
+                    .logo
+                        a(href="#")
+                            img(src="img/logo.png", alt="logo") 
+                            | trips
+                    .sea
+                        button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+                            span.navbar-toggler-icon
+                        #navbarNav.menu.collapse.navbar-collapse
+                            ul.navbar-nav  
+                                li
+                                    a(href="#") Главная
+                                li
+                                    a(href="#") Услуги 
+                                li
+                                    a(href="#") О компании  
+                                li
+                                    a(href="#") Акции  
+                                li
+                                    a(href="#") Партнеры
+                                li
+                                    a(href="#") Отзывы
+                                li
+                                    a(href="#") Контакты
             .sea-travel
                 h1 Морские приключения
                 p Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.

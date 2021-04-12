@@ -32,51 +32,6 @@
         text-align: center
         text-decoration: none
         cursor: pointer
-.checkbox 
-    position: relative
-    visibility: hidden
-    left: 0
-    top: 20px
-.burger 
-    display: none
-    width: 30px
-    cursor: pointer
-    position: absolute
-    top: 0
-    left: 10px
-.menu label
-    display: table
-    position: absolute
-    width: 40px
-    height: 0px
-.checkbox+label:before 
-    content: ""
-    position: absolute
-.checkbox:checked~.menu-box 
-    display: block
-    visibility: visible
-    left: 0
-.burger-visible
-    visibility: hidden
-    display: block
-    width: 30px
-    height: 5px
-    background-color: #fff
-    border-radius: 5px
-    position: absolute
-.burger-visible
-    margin-bottom: 5px
-    position: relative
-    top: 0
-    left: -10px
-@media screen and (max-width:780px)
-    .burger
-        display: block
-    .burger-visible
-        visibility: visible
-    .menu ul
-        display: none
-        visibility: hidden
 .menu   
     li
         list-style-type: none
@@ -758,68 +713,6 @@
         font-family: "PT Sans"
         text-align: center
         text-decoration: none
-.checkbox
-    visibility: hidden
-.checkbox 
-    label
-        position: absolute
-        top: 80px
-        left: 275px
-        width: 15px
-        height: 15px
-        background-color: orange
-        cursor: pointer
-.checkbox 
-    label 
-        &:before
-            content: ""
-            position: absolute
-            top: 3px
-            left: 6px
-            width: 2px
-            height: 10px
-            background-color: #fff
-.checkbox 
-    label
-        &:after
-            content: ""
-            position: absolute
-            top: 3px
-            left: 6px
-            width: 2px
-            height: 10px
-            background-color: #fff
-.checkbox
-    label
-        &:before
-            transform: rotate(45deg)
-.checkbox  
-    label
-        &:after
-            transform: rotate(-45deg)
-.checkbox
-    &:checked
-        label{
-            background-color: transparent
-.checkbox
-    &:checked
-        label
-            &:before
-                content: "Open form"
-                padding: 10px
-                width: auto
-                height: auto
-                background-color: orange
-                border-radius: 5px
-.checkbox
-    &:checked
-        label
-            &:after
-                display: none
-.checkbox
-    &:checked
-        .block
-            display: none
 @media screen and ( max-width: 1024px )
     .row
         text-align: center
