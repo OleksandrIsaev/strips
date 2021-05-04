@@ -1,38 +1,35 @@
 .mainwrapper
     width: 100%
     background-color: #f5f8fa
-
 .mainlogo
     position: relative
     width: 100%
     padding-top: 60px
     padding-bottom: 60px
-    background:  url(https://raw.githubusercontent.com/OleksandrIsaev/strips/master/src/img/mainlogo.png) no-repeat  bottom/cover
+    background:  url(../img/mainlogo.png) no-repeat  bottom/cover
 .mainwrapper
-    margin: 0 auto
-.space
-    display: flex
-    justify-content: space-between
+    marg-in: 0 auto
+.hr
+    margin: 6rem 0
 .logo
     display: inline-block
     a  
         display: flex
         align-items: center
-        &:hover
-            color: #ffb700
         img
             margin-right: 8px
 .logo
     a
         font-size: 36px
         line-height: 21px
-        color: #fff
+        color: #ffffff
         font-weight: 500
         font-family: 'Exo2'
         text-align: center
         text-decoration: none
         cursor: pointer
-.menu   
+.menu 
+    
     li
         list-style-type: none
     ul
@@ -63,8 +60,47 @@
     padding-bottom: 220px
     text-align: center
     z-index: 1
+    &:before
+        content: ''
+        position: absolute
+        height: 6%
+        border: solid 4px #fff
+        border-bottom: none
+        width: 30%
+        left: 35%
+        top: 20%
+        opacity: .4
+        z-index: 1
+    &:after
+        content: ''
+        position: absolute
+        height: 13%
+        border: solid 4px #fff
+        border-top: none
+        top: 58%
+        width: 30%
+        left: 35%
+        opacity: .4
+        z-index: -1
+    h1
+        font-size: 5em
+        letter-spacing: 1px
+        color: #ffffff
+        font-weight: 800
+        font-family: 'Exo2 Extra'
+        text-align: center
+        text-transform: uppercase
+    p
+        margin: 0 auto
+        max-width: 580px
+        font-size: 16px
+        line-height: 24px
+        color: #ffffff
+        font-weight: 400
+        font-style: italic
+        font-family: "PT Sans"
+        text-align: center
     a
-        z-index: 5
         border-radius: 23px
         filter: drop-shadow(0px 4px 10.5px rgba(193,139,1,0.24))
         background-color: #ffb700
@@ -79,46 +115,10 @@
         text-align: center
         text-decoration: none
         text-transform: uppercase
-        cursor: pointer
-    &:before
-        content: ''
-        position: absolute
-        height: 10%
-        border: solid 4px #fff
-        border-bottom: none
-        width: 30%
-        left: 35%
-        top: 20%
-        opacity: 0.4
-        z-index: 1
-    &:after
-        content: ''
-        position: absolute
-        height: 13%
-        border: solid 4px #FFF
-        border-top: none
-        top: 56%
-        left: 35%
-        width: 30%
-        opacity: 0.4
-        z-index: -1
-    h1
-        font-size: 72px
-        letter-spacing: 1px
-        color: #ffffff
-        font-weight: 800
-        font-family: 'Exo2 Extra'
-        text-align: center
-    p
-        margin: 0 auto
-        max-width: 580px
-        font-size: 16px
-        line-height: 24px
-        color: #ffffff
-        font-weight: 400
-        font-style: italic
-        font-family: "PT Sans"
-        text-align: center
+        z-index: 2
+        &:hover
+            color: #ffff
+            background-color: #15333f
 .travel
     text-align: center
     h2
@@ -140,6 +140,18 @@
         content: ""
         top: 20px
         left: 20px
+.bounce
+  animation: bounce 2s infinite
+
+@keyframes bounce
+  0%, 20%, 50%, 80%, 100%
+    transform: translateY(0)
+
+  40%
+    transform: translateY(-30px)
+
+  60%
+    transform: translateY(-15px)
 .arrow
     position: absolute
     bottom: 0
@@ -192,6 +204,9 @@
         text-align: center
         text-decoration: none
         text-transform: uppercase
+        &:hover
+            color: #ffff
+            background-color: #15333f
     b
         display: inline-block
         padding-top: 20px
@@ -202,12 +217,12 @@
         font-family: "PT Sans"
 .price
     padding-top: 86px
+    align-items: flex-start
 .priceOne
     position: relative
     text-align: center
-    height: 100%
-    .kard
-        padding-top: 30px
+    padding: 28px 40px
+
     p
         margin: 0
         font-size: 18px
@@ -216,7 +231,6 @@
         font-weight: bold
         font-family: 'Exo2'
     .text-main 
-        padding: 0 30px
         font-size: 13px
         line-height: 19px
         color: #000000
@@ -228,6 +242,24 @@
         line-height: 44px
         color: #0099ff
         font-family: 'Exo2'
+.kpopkaept
+    font-size: 12px
+    letter-spacing: 0px
+    color: #0099ff
+    text-align: center
+    padding: 10px
+    a
+        font-size: 12px
+        letter-spacing: 0px
+        color: #0099ff
+        font-weight: bold
+        font-family: "Exo2"
+        text-align: center
+        text-transform: uppercase
+        text-decoration: none
+        &:hover
+            color: #15333f
+
 .green
     position: absolute
     content: ""
@@ -243,45 +275,20 @@
 .containerr
     margin: 0
     padding: 0
-.col-xl
-    a
-        text-decoration: none
-        cursor: pointer
-.looks
-    display: inline-block
-    text-align: center
-    a
-        width: 70%
-        display: inline-block
-        font-size: 16px
-        letter-spacing: 0px
-        line-height: 110px
-        color: #0099ff
-        font-weight: bold
-        font-family: "Exo2.0"
-        text-decoration: none
-        &:hover
-            color: #ffb700
-        &:after
-            content: ''
-            vertical-align: middle
-            display: inline-block
-            margin-left: 8px
-            width: 11px
-            height: 11px
-            background-image: url(../img/strilar.png)
+.ostrow
+    img
+        width: 100%
+        height: 100%
+        object-fit: contain
 .main-ilend
     padding-bottom: 80px
-    img
-        width: 370px
-        height: 270px
-        object-fit: cover
     h1
         font-size: 36px
         color: #000000
         font-family: "Exo2"
     p
         display: inline-block
+        padding-bottom: 15px
         margin: 0
         font-size: 15px
         color: #000000
@@ -309,7 +316,7 @@
 .second-img
     width: 100%
     padding: 60px 0
-    background:  url(https://raw.githubusercontent.com/OleksandrIsaev/strips/master/src/img/sea.png) no-repeat  center/cover
+    background:  url(../img/sea.png) no-repeat  center/cover
 .aboutCompany
     h3
         font-size: 56px
@@ -348,6 +355,9 @@
         text-align: center
         text-decoration: none
         text-transform: uppercase
+        &:hover
+            color: rgb(255, 255, 255)
+            background-color: rgb(21, 51, 63)
 .photo
     position: absolute
     content: ""
@@ -355,6 +365,7 @@
     bottom: 0
     left: 50%
     transform: translate(-50%, 50%)
+    z-index: 1
 .photoCom
     position: absolute
     content: ""
@@ -365,14 +376,14 @@
     position: relative
     padding: 50px
     &:before
-      content: ''
-      position: absolute
-      top: 0
-      right: 0
-      left: 60%
-      height: 100%
-      border: solid 4px #5c6871
-      border-left: none
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        height: 100%
+        border: solid 4px #5c6871
+        border-left: none
+        width: 40%;
     &:after
         content: ''
         position: absolute
@@ -382,6 +393,8 @@
         height: 100%
         border: solid 4px #5c6871
         border-right: none
+        width: 40%
+
     p
         margin: 0
         font-size: 17px
@@ -408,13 +421,15 @@
         text-align: center
 .podrobnosti
     display: inline-block
-    margin-top: 36px
     margin-right: 10px
     border-radius: 23px
     filter: drop-shadow(0px 4px 10.5px rgba(193,139,1,0.24))
     background-color: #ffb700
+    &:hover
+            color: #ffff
+            background-color: #15333f
 .podrobnosti
-    padding: 11px 28px
+    padding: 10px 28px
     font-size: 16px
     letter-spacing: 1px
     color: #342602
@@ -423,14 +438,18 @@
     text-align: center
     text-decoration: none
     text-transform: uppercase
+    
 .test
     display: inline-block
-    margin-top: 36px
     border-radius: 23px
     background-color: rgba(0,153,255,0)
     border: 2px solid #0099ff
+    margin-bottom: 20px
+    &:hover
+        color: #ffff
+        background-color: #15333f
 .test
-    padding: 11px 23px
+    padding: 10px 23px
     font-style: normal
     font-size: 16px
     letter-spacing: 1px
@@ -455,10 +474,15 @@
         font-family: "PT Sans"
         text-align: center
 .photoBlok
-        position: relative
+    position: relative
+    display: inline-block
+    width: 100%
+    img
         width: 100%
-        height: 45%
+        height: 190px
+        object-fit: cover
 .priceCheck
+    align-items: start
     h5
         padding: 25px 20px 0 20px 
         font-size: 18px
@@ -490,33 +514,31 @@
     font-family: "Exo2"
     text-align: center
     text-transform: uppercase
-    text-decoration: none
-    &:before
-        position: absolute
-        content: ""
-        background: url(https://raw.githubusercontent.com/OleksandrIsaev/strips/master/src/img/ellipse.png) no-repeat right
-        width: 100%
-        height: 100%
-        right: -25%
+    text-decoration: none                
 .priceBlocks
-    height: 100%
-    width:
     position: relative
     &:hover
         filter: drop-shadow(0px 4px 10.5px rgba(3,20,31,0.05))
-        background-color: #fff
+        background-color: #ffffff
+.photoBloks
+    img
+        width: 100%
+        height: 190px
+        object-fit: cover
 .blue
     position: absolute
     content: ""
     top: 0
     left: 0
     z-index: 1
+    width: 19%
+    height: 48%
 .documents
     h3
         font-size: 36px
         letter-spacing: 1px
         line-height: 40px
-        color: #000
+        color: #000000
         font-weight: bold
         font-family: 'Exo2'
         text-transform: uppercase
@@ -529,15 +551,25 @@
             color: #0099ff
     p
         font-size: 16px
-        color: #666
+        color: #666666
         font-weight: 400
         font-style: italic
         font-family: "PT Sans"
+@media screen and ( max-width:425px  )
+    .hotel
+        margin-bottom: 20px
+    .food
+        margin-bottom: 20px
+    .sea-travel
+        h1
+            font-size: 2em
+        p
+            font-size: 1em
 .hotel
     width: 100%
     height: 100%
     padding: 25px 20px
-    background: url(https://raw.githubusercontent.com/OleksandrIsaev/strips/master/src/img/house.png) no-repeat center/cover
+    background: url(../img/house.png) no-repeat center/cover
     img
         vertical-align: top
     p
@@ -545,10 +577,11 @@
         margin: 0
         padding-left: 16px
         font-size: 18px
-        color: #fff
+        color: #ffffff
         font-weight: 500
         font-family: "Exo2"
     .fail
+        display: block
         margin: 0
         padding-left: 52px
         font-size: 13px
@@ -560,7 +593,7 @@
         padding: 0 0 26px 0
         font-size: 13px
         line-height: 19px
-        color: #fff
+        color: #ffffff
         font-weight: 400
         font-family: "PT Sans"
 .submite
@@ -574,6 +607,9 @@
     text-transform: uppercase
     .bi.bi-cloud
         padding-right: 4px
+    &:hover
+        color: #ffffff
+        background-color: #ffb700
 .submite
     border-radius: 16px
     background-color: rgba(255,183,0,0)
@@ -582,7 +618,7 @@
     width: 100%
     height: 100%
     padding: 25px 20px
-    background: url(https://raw.githubusercontent.com/OleksandrIsaev/strips/master/src/img/food.png) no-repeat center/cover
+    background: url(../img/food.png) no-repeat center/cover
     img
         vertical-align: top
     p
@@ -590,10 +626,11 @@
         margin: 0
         padding-left: 16px
         font-size: 18px
-        color: #fff
+        color: #ffffff
         font-weight: 500
         font-family: "Exo2"
     .fail
+        display: block
         margin: 0
         padding-left: 52px
         font-size: 13px
@@ -605,7 +642,7 @@
         padding: 0 0 26px 0
         font-size: 13px
         line-height: 19px
-        color: #fff
+        color: #ffffff
         font-weight: 400
         font-family: "PT Sans"
 .submite
@@ -627,19 +664,10 @@
     position: relative
     height: 100%
     padding: 50px
-    a
-        display: block
-        font-size: 18px
-        line-height: 26px
-        color: #0099ff
-        font-weight: bold
-        font-family: "Exo2"
-        text-align: center
-        text-decoration: none
     .photoCom    
         font-size: 1em
         line-height: 26px
-        color: #000
+        color: #000000
         font-weight: bold
         font-family: "Exo2"
         text-align: center
@@ -666,7 +694,7 @@
         margin: 0
         font-size: 13px
         line-height: 19px
-        color: #000
+        color: #000000
         font-weight: 400
         font-family: "PT Sans"
         text-align: center
@@ -674,7 +702,7 @@
         position: relative
         font-size: 18px
         line-height: 26px
-        color: #000
+        color: #000000
         font-weight: 500
         font-family: "Exo2"
         text-align: center
@@ -685,6 +713,17 @@
         font-weight: 400
         font-family: "PT Sans"
         text-align: center
+.numb
+        display: block
+        font-size: 18px
+        line-height: 26px
+        color: #0099ff
+        font-weight: bold
+        font-family: "Exo2"
+        text-align: center
+        text-decoration: none
+        i
+            padding-right: 10px
 .photoCom
     position: absolute
     content: ""
@@ -692,43 +731,59 @@
     left: 50%
     transform: translate(-50%, -50%)
 .footer
-    padding-top: 80px
     padding-bottom: 80px
 .finish-photo
     width: 100%
     height: 400px
     padding: 60px 0
-    background:  url(https://raw.githubusercontent.com/OleksandrIsaev/strips/master/src/img/finish-bottom.png) no-repeat top/cover
+    background:  url(../img/finish-bottom.png) no-repeat top/cover
 .finish-text
     width: 100%
     background-color: #1a1a1a
-    a
-        display: inline-block
-        margin: 0 auto
-        width: 100%
+    p
+        margin: 0
+        padding: 14px 0
         font-size: 13px
         line-height: 19px
         color: #767676
         font-weight: 400
         font-family: "PT Sans"
         text-align: center
-        text-decoration: none
-@media screen and ( max-width: 1024px )
-    .row
+@media screen and ( max-width:1399px )
+    .about 
         text-align: center
-    .quest
-        margin-top: 55px
-    .foods
-        margin-top: 30px
+    .photoBloks,
+    .photoBlok
+        img
+            height: 50%
+    .aboutCompany
+        text-align: center
+        .col-8
+            width: 100%
+    .sea-travel
+        h1
+            font-size: 3em
+    .main-ilend 
+        .col-xl
+            text-align: center
+@media screen and ( max-width:1199px ) 
+    .main-ilend
+        text-align: center
+    .photoBloks,
+    .photoBlok
+        height: 25rem
+        img
+            height: 25rem
     .priceBlocks
-        display: table
-        text-align: center
-        a
-            display: table
-            text-align: center
-    .col-xl
-        display: table
-        text-align: center
-        a
-            display: table
-            text-align: center
+        margin-bottom: 40px
+    .failText
+        display: block
+    .ostrow
+        img
+                height: 21rem
+@media screen and ( max-width:425px ) 
+    .priceOne
+        background-color: #fff
+        filter: drop-shadow(0 4px 10.5px rgba(3, 20, 31, .05))
+
+
